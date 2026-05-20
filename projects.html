@@ -554,14 +554,14 @@
                                 <button class="entry-toggle" type="button">
                                     <div class="entry-toggle-main">
                                         <div class="job-title" id="title-stage">Analyse Cybersécurité et Réseaux</div>
-                                        <span class="job-meta" id="meta-stage">Expérience Professionnelle</span>
+                                        <span class="job-meta" id="meta-stage">Stage · Systelium Qatar</span>
                                     </div>
                                     <span class="entry-toggle-icon"><i class="fas fa-chevron-down"></i></span>
                                 </button>
                                 <div class="entry-content">
                                     <div class="entry-content-inner">
                                         <p class="job-intro" id="desc-stage">
-                                            Stage orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.
+                                            Stage réalisé chez Systelium Qatar, orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.
                                         </p>
                                         
                                         <ul class="job-list" id="list-stage">
@@ -826,6 +826,62 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="project-card">
+                                <button class="entry-toggle" type="button">
+                                    <div class="entry-toggle-main">
+                                        <div class="job-title" id="title-inscription">Site d'inscription sécurisé</div>
+                                        <span class="job-meta" id="meta-inscription">Projet &amp; SAE</span>
+                                    </div>
+                                    <span class="entry-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                                </button>
+                                <div class="entry-content">
+                                    <div class="entry-content-inner">
+                                        <p class="job-intro" id="desc-inscription">
+                                            Conception et développement d'un site web d'inscription utilisateur intégrant la sécurité applicative de bout en bout : API PHP sécurisée, cryptographie des données, authentification renforcée par code OTP, conformité RGPD et durcissement de la base de données.
+                                        </p>
+
+                                        <ul class="job-list" id="list-inscription">
+                                            <li>Sécurisation d'une API PHP : validation des entrées, authentification et protection contre les injections.</li>
+                                            <li>Mise en œuvre de la cryptographie pour le chiffrement et le hachage des données sensibles.</li>
+                                            <li>Intégration d'un code OTP pour l'authentification à double facteur.</li>
+                                            <li>Mise en place du respect du RGPD : consentement, minimisation et protection des données personnelles.</li>
+                                            <li>Sécurisation de la base de données : requêtes préparées, gestion des droits et chiffrement.</li>
+                                        </ul>
+
+                                        <span class="section-label" id="tools-inscription-label">Outils</span>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">PHP</span>
+                                            <span class="tech-tag">API REST</span>
+                                            <span class="tech-tag">Cryptographie</span>
+                                            <span class="tech-tag">OTP / 2FA</span>
+                                            <span class="tech-tag">RGPD</span>
+                                            <span class="tech-tag">MySQL</span>
+                                        </div>
+
+                                        <div class="competency-list">
+                                            <div class="competency-item">
+                                                <button class="competency-toggle" type="button">
+                                                    <span>Créer des outils et applications informatiques pour les R&amp;T</span>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="competency-content">
+                                                    <p>Concevoir et développer une application web sécurisée en intégrant la sécurité dès la conception : API, cryptographie et authentification forte.</p>
+                                                </div>
+                                            </div>
+                                            <div class="competency-item">
+                                                <button class="competency-toggle" type="button">
+                                                    <span>Surveiller un système d'information</span>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </button>
+                                                <div class="competency-content">
+                                                    <p>Protéger les données personnelles et l'intégrité d'une base de données en appliquant le RGPD et les bonnes pratiques de sécurisation.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -875,10 +931,10 @@
 
             // EXPERIENCES
             if(document.getElementById('title-stage')) document.getElementById('title-stage').innerText = isEn ? "Cybersecurity & Network Analysis" : "Analyse Cybersécurité et Réseaux";
-            if(document.getElementById('meta-stage')) document.getElementById('meta-stage').innerText = isEn ? "Professional Experience" : "Expérience Professionnelle";
+            if(document.getElementById('meta-stage')) document.getElementById('meta-stage').innerText = isEn ? "Internship · Systelium Qatar" : "Stage · Systelium Qatar";
             if(document.getElementById('desc-stage')) document.getElementById('desc-stage').innerText = isEn
-                ? "Internship focused on monitoring, information-system security analysis and continuous improvement of cybersecurity practices in a network environment."
-                : "Stage orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.";
+                ? "Internship completed at Systelium Qatar, focused on monitoring, information-system security analysis and continuous improvement of cybersecurity practices in a network environment."
+                : "Stage réalisé chez Systelium Qatar, orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.";
             if(document.getElementById('list-stage')) document.getElementById('list-stage').innerHTML = isEn
                 ? "<li>Monitoring network flows and information-system security.</li><li>Analyzing and tracking incidents as well as vulnerabilities.</li><li>Upgrading applications and network equipment.</li><li>Writing and reviewing cybersecurity procedures.</li>"
                 : "<li>Supervision des flux réseaux et de la sécurité du SI.</li><li>Analyse et suivi des incidents ainsi que des vulnérabilités.</li><li>Remise à niveau des applications et des équipements réseaux.</li><li>Rédaction et revue des procédures de cybersécurité.</li>";
@@ -920,6 +976,15 @@
                 ? "<li>Set up essential infrastructure services.</li><li>Configured a stable and operable environment.</li><li>Documented choices and deployment method.</li>"
                 : "<li>Mise en place de services essentiels à l'infrastructure.</li><li>Configuration d'un environnement stable et exploitable.</li><li>Documentation des choix et de la méthode de déploiement.</li>";
 
+            if(document.getElementById('title-inscription')) document.getElementById('title-inscription').innerText = isEn ? "Secure Registration Website" : "Site d'inscription sécurisé";
+            if(document.getElementById('meta-inscription')) document.getElementById('meta-inscription').innerText = isEn ? "Project & SAE" : "Projet & SAE";
+            if(document.getElementById('desc-inscription')) document.getElementById('desc-inscription').innerText = isEn
+                ? "Design and development of a user registration website with end-to-end application security: secured PHP API, data cryptography, strengthened authentication with an OTP code, GDPR compliance and database hardening."
+                : "Conception et développement d'un site web d'inscription utilisateur intégrant la sécurité applicative de bout en bout : API PHP sécurisée, cryptographie des données, authentification renforcée par code OTP, conformité RGPD et durcissement de la base de données.";
+            if(document.getElementById('list-inscription')) document.getElementById('list-inscription').innerHTML = isEn
+                ? "<li>Secured a PHP API: input validation, authentication and protection against injections.</li><li>Implemented cryptography to encrypt and hash sensitive data.</li><li>Integrated an OTP code for two-factor authentication.</li><li>Set up GDPR compliance: consent, data minimization and personal data protection.</li><li>Secured the database: prepared statements, access-rights management and encryption.</li>"
+                : "<li>Sécurisation d'une API PHP : validation des entrées, authentification et protection contre les injections.</li><li>Mise en œuvre de la cryptographie pour le chiffrement et le hachage des données sensibles.</li><li>Intégration d'un code OTP pour l'authentification à double facteur.</li><li>Mise en place du respect du RGPD : consentement, minimisation et protection des données personnelles.</li><li>Sécurisation de la base de données : requêtes préparées, gestion des droits et chiffrement.</li>";
+
             // LABELS
             document.querySelectorAll('.section-label').forEach(label => {
                 label.innerText = isEn ? "Tools" : "Outils";
@@ -944,6 +1009,8 @@
                 toggles[7].innerText = "Monitor an information system";
                 toggles[8].innerText = "Administer networks and the Internet";
                 toggles[9].innerText = "Create software tools and applications for networks and telecoms";
+                toggles[10].innerText = "Create software tools and applications for networks and telecoms";
+                toggles[11].innerText = "Monitor an information system";
 
                 contents[0].innerText = "Use administration, supervision and security methods to maintain a coherent and operable network environment.";
                 contents[1].innerText = "Take user needs, service quality and continuity of access into account in a real professional context.";
@@ -955,6 +1022,8 @@
                 contents[7].innerText = "Identify abnormal behavior, qualify risks and suggest improvements to strengthen the security level.";
                 contents[8].innerText = "Deploy the infrastructure services required for an information system and guarantee their technical consistency.";
                 contents[9].innerText = "Produce configurations, methods and clear documentation to make a deployment reproducible and understandable.";
+                contents[10].innerText = "Design and develop a secure web application by integrating security from the design phase: API, cryptography and strong authentication.";
+                contents[11].innerText = "Protect personal data and database integrity by applying GDPR and security best practices.";
             } else {
                 toggles[0].innerText = "Administrer les réseaux et l'Internet";
                 toggles[1].innerText = "Connecter les entreprises et les usagers";
@@ -966,6 +1035,8 @@
                 toggles[7].innerText = "Surveiller un système d'information";
                 toggles[8].innerText = "Administrer les réseaux et l'Internet";
                 toggles[9].innerText = "Créer des outils et applications informatiques pour les R&T";
+                toggles[10].innerText = "Créer des outils et applications informatiques pour les R&T";
+                toggles[11].innerText = "Surveiller un système d'information";
 
                 contents[0].innerText = "Mobiliser les méthodes d'administration, de supervision et de sécurisation pour maintenir un environnement réseau cohérent et exploitable.";
                 contents[1].innerText = "Prendre en compte les besoins utilisateurs, la qualité de service et la continuité des accès dans un contexte professionnel réel.";
@@ -977,6 +1048,8 @@
                 contents[7].innerText = "Identifier des comportements anormaux, qualifier les risques et proposer des pistes d'amélioration pour renforcer le niveau de sécurité.";
                 contents[8].innerText = "Déployer les services d'infrastructure nécessaires au fonctionnement d'un système d'information et garantir leur cohérence technique.";
                 contents[9].innerText = "Produire des configurations, des méthodes et une documentation claire pour rendre un déploiement reproductible et compréhensible.";
+                contents[10].innerText = "Concevoir et développer une application web sécurisée en intégrant la sécurité dès la conception : API, cryptographie et authentification forte.";
+                contents[11].innerText = "Protéger les données personnelles et l'intégrité d'une base de données en appliquant le RGPD et les bonnes pratiques de sécurisation.";
             }
         }
 

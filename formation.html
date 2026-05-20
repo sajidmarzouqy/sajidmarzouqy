@@ -476,10 +476,28 @@
                                 <button class="accordion-toggle" type="button">
                                     <div class="accordion-head">
                                         <div class="accordion-main">
+                                            <div class="accordion-icon"><i class="fas fa-university"></i></div>
+                                            <div class="accordion-text">
+                                                <div class="accordion-title" id="f0-title">Diplôme d'Ingénieur Informatique – DICASI (CNAM)</div>
+                                                <span class="accordion-badge" id="f0-badge">[EN COURS]</span>
+                                            </div>
+                                        </div>
+                                        <i class="fas fa-chevron-down accordion-chevron"></i>
+                                    </div>
+                                </button>
+                                <div class="accordion-content">
+                                    <p id="f0-text">Cycle d'ingénieur en alternance au Conservatoire National des Arts et Métiers (CNAM), parcours DICASI orienté informatique et systèmes d'information. Formation accréditée par la CTI, poursuivie dans la continuité du BUT pour approfondir le développement, la sécurité et la gestion de projets.</p>
+                                </div>
+                            </article>
+
+                            <article class="accordion-card">
+                                <button class="accordion-toggle" type="button">
+                                    <div class="accordion-head">
+                                        <div class="accordion-main">
                                             <div class="accordion-icon"><i class="fas fa-network-wired"></i></div>
                                             <div class="accordion-text">
                                                 <div class="accordion-title" id="f1-title">BUT Réseaux &amp; Télécommunications (Parcours Cybersécurité)</div>
-                                                <span class="accordion-badge" id="f1-badge">[EN COURS]</span>
+                                                <span class="accordion-badge" id="f1-badge">[OBTENU]</span>
                                             </div>
                                         </div>
                                         <i class="fas fa-chevron-down accordion-chevron"></i>
@@ -686,8 +704,12 @@
 
             if(document.getElementById('title-formations')) document.getElementById('title-formations').innerText = isEn ? "Education" : "Formations";
             if(document.getElementById('title-certifications')) document.getElementById('title-certifications').innerText = isEn ? "Certifications" : "Certifications";
+            if(document.getElementById('f0-title')) document.getElementById('f0-title').innerText = isEn ? "Computer Engineering Degree – DICASI (CNAM)" : "Diplôme d'Ingénieur Informatique – DICASI (CNAM)";
+            if(document.getElementById('f0-badge')) document.getElementById('f0-badge').innerText = isEn ? "[IN PROGRESS]" : "[EN COURS]";
+            if(document.getElementById('f0-text')) document.getElementById('f0-text').innerText = isEn ? "Work-study engineering program at the Conservatoire National des Arts et Métiers (CNAM), DICASI track focused on computer science and information systems. A CTI-accredited program, continued after the BUT to deepen development, security and project management." : "Cycle d'ingénieur en alternance au Conservatoire National des Arts et Métiers (CNAM), parcours DICASI orienté informatique et systèmes d'information. Formation accréditée par la CTI, poursuivie dans la continuité du BUT pour approfondir le développement, la sécurité et la gestion de projets.";
+
             if(document.getElementById('f1-title')) document.getElementById('f1-title').innerText = isEn ? "BUT Networks & Telecommunications (Cybersecurity Track)" : "BUT Réseaux & Télécommunications (Parcours Cybersécurité)";
-            if(document.getElementById('f1-badge')) document.getElementById('f1-badge').innerText = isEn ? "[IN PROGRESS]" : "[EN COURS]";
+            if(document.getElementById('f1-badge')) document.getElementById('f1-badge').innerText = isEn ? "[OBTAINED]" : "[OBTENU]";
             if(document.getElementById('f1-text')) document.getElementById('f1-text').innerText = isEn ? "Built a solid technical foundation in network administration, cloud computing and infrastructure security. Applied in practice through SAE projects." : "Acquisition d'un socle technique solide en administration réseau, Cloud Computing et sécurisation des infrastructures. Mise en pratique via des SAE (Projets).";
 
             if(document.getElementById('f2-title')) document.getElementById('f2-title').innerText = isEn ? "General Baccalaureate" : "Baccalauréat Général";
