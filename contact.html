@@ -406,7 +406,12 @@
                 <div class="contact-details">
                     <span class="status-badge" id="contact-badge">🟢 Cybersécurité &amp; Infrastructure</span>
                     <h1 id="contact-h1">Discutons de votre projet</h1>
-                    <p id="contact-p">N'hésitez pas à me contacter pour discuter de vos projets en matière de sécurité, d'architecture réseau, ou pour toute opportunité de collaboration.</p>
+                    <p id="contact-p">Actuellement en recherche d'une alternance en cybersécurité, je suis ouvert à toute opportunité. N'hésitez pas à me contacter pour discuter de vos projets en sécurité ou en architecture réseau.</p>
+
+                    <div class="detail-item">
+                        <span class="detail-label" id="label-alt">Alternance recherchée</span>
+                        <span class="detail-value" id="value-alt">Rythme 1 semaine en entreprise / 1 semaine à l'école</span>
+                    </div>
 
                     <div class="detail-item">
                         <span class="detail-label">Email</span>
@@ -527,12 +532,15 @@
 
             if(document.getElementById('contact-p')) {
                 document.getElementById('contact-p').innerHTML = isEn
-                    ? "Feel free to contact me to discuss your security projects, network architecture topics, or any collaboration opportunity."
-                    : "N'hésitez pas à me contacter pour discuter de vos projets en matière de sécurité, d'architecture réseau, ou pour toute opportunité de collaboration.";
+                    ? "Currently looking for a work-study placement in cybersecurity, I am open to any opportunity. Feel free to reach out to discuss your security or network architecture projects."
+                    : "Actuellement en recherche d'une alternance en cybersécurité, je suis ouvert à toute opportunité. N'hésitez pas à me contacter pour discuter de vos projets en sécurité ou en architecture réseau.";
             }
 
             if(document.getElementById('label-loc')) document.getElementById('label-loc').innerText = isEn ? "Location" : "Localisation";
             if(document.getElementById('value-loc')) document.getElementById('value-loc').innerText = isEn ? "Paris Region, France" : "Île-de-France, France";
+
+            if(document.getElementById('label-alt')) document.getElementById('label-alt').innerText = isEn ? "Apprenticeship sought" : "Alternance recherchée";
+            if(document.getElementById('value-alt')) document.getElementById('value-alt').innerText = isEn ? "Rhythm: 1 week in company / 1 week at school" : "Rythme 1 semaine en entreprise / 1 semaine à l'école";
 
             if(document.getElementById('label-prenom')) document.getElementById('label-prenom').innerText = isEn ? "First Name" : "Prénom";
             if(document.getElementById('label-nom')) document.getElementById('label-nom').innerText = isEn ? "Last Name" : "Nom";

@@ -427,6 +427,11 @@
                     <i class="fas fa-shield-alt"></i> <span id="hero-status">Étudiant Ingénieur CNAM • Cybersécurité</span>
                 </span>
             </div>
+            <div class="fade-in-up">
+                <span class="hero-badge">
+                    <i class="fas fa-briefcase"></i> <span id="hero-alt">En recherche d'alternance · rythme 1 semaine / 1 semaine</span>
+                </span>
+            </div>
             <p class="subtitle fade-in-up" id="hero-sub">
                 Étudiant en Cybersécurité, passionné par la conception d'infrastructures résilientes et la protection des données.
             </p>
@@ -491,6 +496,7 @@
 
             // HERO
             document.getElementById('hero-status').innerText = isEn ? "Engineering Student at CNAM • Cybersecurity" : "Étudiant Ingénieur CNAM • Cybersécurité";
+            if(document.getElementById('hero-alt')) document.getElementById('hero-alt').innerText = isEn ? "Looking for a work-study placement · 1 week / 1 week rhythm" : "En recherche d'alternance · rythme 1 semaine / 1 semaine";
             document.getElementById('hero-sub').innerHTML = isEn
                 ? "Cybersecurity student, passionate about designing resilient infrastructures and protecting data."
                 : "Étudiant en Cybersécurité, passionné par la conception d'infrastructures résilientes et la protection des données.";
