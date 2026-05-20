@@ -1,0 +1,12 @@
+{
+  "name": "cv-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Génère CvFr.pdf et Cven.pdf depuis les sources HTML/CSS",
+  "scripts": {
+    "build": "node render.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  }
+}

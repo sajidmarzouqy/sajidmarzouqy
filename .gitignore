@@ -1,5 +1,10 @@
 # Outillage local Claude Code
 .claude/
 
+# Dépendances Node (générateur de CV)
+node_modules/
+cv/node_modules/
+cv/package-lock.json
+
 # macOS
 .DS_Store
