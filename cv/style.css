@@ -10,7 +10,7 @@ html, body {
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 9.5px;
-    line-height: 1.4;
+    line-height: 1.45;
     color: #2b2b2b;
     background: linear-gradient(to right, #2e2e2e 0, #2e2e2e 33.5%, #ffffff 33.5%, #ffffff 100%);
 }
@@ -25,35 +25,48 @@ body {
 /* ---------- SIDEBAR ---------- */
 .sidebar {
     width: 33.5%;
-    padding: 22px 19px;
+    padding: 19px 18px;
     color: #dcdcdc;
 }
 
-.contact-list { list-style: none; margin-bottom: 16px; }
+.contact-list { list-style: none; margin-bottom: 15px; }
 .contact-list li {
     display: flex;
     gap: 9px;
     align-items: flex-start;
-    margin-bottom: 7px;
-    font-size: 9px;
+    margin-bottom: 6px;
+    font-size: 8.9px;
     color: #cfcfcf;
 }
 .contact-list i { color: #2ba6d9; width: 13px; text-align: center; flex-shrink: 0; margin-top: 1px; }
 
-.side-section { margin-bottom: 15px; }
+.side-section { margin-bottom: 13px; }
 .side-title {
     font-family: 'Rubik', sans-serif;
-    font-size: 12px;
+    font-size: 11.5px;
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 0.6px;
-    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    margin-bottom: 9px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(255,255,255,0.16);
 }
 
-.lang-item { margin-bottom: 9px; }
+/* skills in sidebar */
+.skill-side { margin-bottom: 7px; }
+.skill-side:last-child { margin-bottom: 0; }
+.skill-side-name {
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 9px;
+    margin-bottom: 1px;
+}
+.skill-side-list { color: #b6b6b6; font-size: 8.3px; line-height: 1.4; }
+
+.lang-item { margin-bottom: 8px; }
 .lang-name { font-weight: 700; color: #ffffff; font-size: 9.6px; }
 .lang-note { color: #b3b3b3; font-size: 8.6px; }
 .bar { height: 4px; background: rgba(255,255,255,0.14); border-radius: 3px; margin-top: 4px; }
@@ -61,9 +74,9 @@ body {
 
 .side-list { list-style: none; }
 .side-list li {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     color: #c4c4c4;
-    font-size: 8.9px;
+    font-size: 8.8px;
     position: relative;
     padding-left: 11px;
 }
@@ -76,49 +89,50 @@ body {
     background: #2ba6d9;
 }
 
-.interest { margin-bottom: 9px; }
-.interest-name { font-weight: 700; color: #ffffff; font-size: 9.3px; }
-.interest-desc { color: #b4b4b4; font-size: 8.5px; }
+.interest { margin-bottom: 8px; }
+.interest-name { font-weight: 700; color: #ffffff; font-size: 9.2px; }
+.interest-desc { color: #b4b4b4; font-size: 8.4px; }
 
-.cert { margin-bottom: 9px; color: #c4c4c4; font-size: 8.8px; }
-.cert strong { color: #ffffff; font-weight: 700; display: block; font-size: 9.2px; }
+.cert { margin-bottom: 8px; color: #c4c4c4; font-size: 8.7px; }
+.cert strong { color: #ffffff; font-weight: 700; display: block; font-size: 9.1px; }
 
 /* ---------- MAIN ---------- */
 .main {
     width: 66.5%;
-    padding: 22px 28px 22px;
+    padding: 30px 32px 30px;
 }
 
 .name {
     font-family: 'Rubik', sans-serif;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 700;
     color: #222222;
     letter-spacing: 0.3px;
 }
 .role {
     font-family: 'Rubik', sans-serif;
-    font-size: 12.5px;
+    font-size: 13px;
     font-weight: 500;
     color: #2ba6d9;
-    margin: 3px 0 11px;
+    margin: 3px 0 13px;
 }
 .profile {
-    font-size: 9.3px;
+    font-size: 9.4px;
     color: #4a4a4a;
     text-align: justify;
-    margin-bottom: 11px;
+    margin-bottom: 18px;
 }
 
-.section { margin-bottom: 10px; }
+.section { margin-bottom: 17px; }
+.section:last-child { margin-bottom: 0; }
 .sec-title {
     font-family: 'Rubik', sans-serif;
-    font-size: 13px;
+    font-size: 13.5px;
     font-weight: 600;
     color: #2ba6d9;
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .entries {
@@ -126,7 +140,7 @@ body {
     padding-left: 18px;
     margin-left: 4px;
 }
-.entry { position: relative; margin-bottom: 8px; break-inside: avoid; }
+.entry { position: relative; margin-bottom: 13px; break-inside: avoid; }
 .entry:last-child { margin-bottom: 0; }
 .entry::before {
     content: '';
@@ -137,16 +151,16 @@ body {
     background: #2ba6d9;
     border: 2px solid #ffffff;
 }
-.entry-title { font-weight: 700; font-size: 10.3px; color: #262626; }
-.entry-meta { font-size: 8.6px; color: #9a9a9a; margin: 1px 0 5px; }
+.entry-title { font-weight: 700; font-size: 10.4px; color: #262626; }
+.entry-meta { font-size: 8.7px; color: #9a9a9a; margin: 1px 0 5px; }
 .entry-meta b { color: #2ba6d9; font-weight: 600; }
 
 .entry ul { list-style: none; }
 .entry ul li {
     position: relative;
     padding-left: 11px;
-    margin-bottom: 2px;
-    font-size: 9px;
+    margin-bottom: 3px;
+    font-size: 9.1px;
     color: #4d4d4d;
     text-align: justify;
 }
@@ -159,8 +173,4 @@ body {
     background: #bdbdbd;
 }
 .entry ul li b, .entry p b { color: #2d2d2d; font-weight: 700; }
-.entry p.one-line { font-size: 9px; color: #4d4d4d; text-align: justify; }
-
-.skills-block { }
-.skill-cat { margin-bottom: 4px; font-size: 9.1px; color: #4d4d4d; }
-.skill-cat b { color: #262626; font-weight: 700; }
+.entry p.one-line { font-size: 9.1px; color: #4d4d4d; text-align: justify; }
