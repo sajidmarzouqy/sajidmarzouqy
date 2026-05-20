@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sajid Marzouqy | Formations & Certifications</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -622,53 +629,17 @@
                                 <button class="accordion-toggle" type="button">
                                     <div class="accordion-head">
                                         <div class="accordion-main">
-                                            <div class="accordion-icon"><i class="fas fa-bug"></i></div>
+                                            <div class="accordion-icon"><i class="fas fa-network-wired"></i></div>
                                             <div class="accordion-text">
-                                                <div class="accordion-title" id="c4-title">RootMe</div>
-                                                <span class="accordion-badge" id="c4-badge">[PRATIQUE]</span>
+                                                <div class="accordion-title" id="c4-title">Certification Cisco – Technicien Réseau</div>
+                                                <span class="accordion-badge" id="c4-badge">[VALIDÉ]</span>
                                             </div>
                                         </div>
                                         <i class="fas fa-chevron-down accordion-chevron"></i>
                                     </div>
                                 </button>
                                 <div class="accordion-content">
-                                    <p id="c4-text">Plateforme utilisée pour renforcer les réflexes techniques, la résolution de challenges et l’approche méthodique des problématiques de sécurité.</p>
-                                </div>
-                            </article>
-
-                            <article class="accordion-card">
-                                <button class="accordion-toggle" type="button">
-                                    <div class="accordion-head">
-                                        <div class="accordion-main">
-                                            <div class="accordion-icon"><i class="fas fa-terminal"></i></div>
-                                            <div class="accordion-text">
-                                                <div class="accordion-title" id="c5-title">TryHackMe</div>
-                                                <span class="accordion-badge" id="c5-badge">[PRATIQUE]</span>
-                                            </div>
-                                        </div>
-                                        <i class="fas fa-chevron-down accordion-chevron"></i>
-                                    </div>
-                                </button>
-                                <div class="accordion-content">
-                                    <p id="c5-text">Entraînement régulier sur des environnements guidés pour consolider les fondamentaux offensifs, la lecture d’infrastructure et la progression autonome.</p>
-                                </div>
-                            </article>
-
-                            <article class="accordion-card">
-                                <button class="accordion-toggle" type="button">
-                                    <div class="accordion-head">
-                                        <div class="accordion-main">
-                                            <div class="accordion-icon"><i class="fas fa-id-card"></i></div>
-                                            <div class="accordion-text">
-                                                <div class="accordion-title" id="c6-title">Permis B &amp; A2</div>
-                                                <span class="accordion-badge" id="c6-badge">[VÉHICULÉ]</span>
-                                            </div>
-                                        </div>
-                                        <i class="fas fa-chevron-down accordion-chevron"></i>
-                                    </div>
-                                </button>
-                                <div class="accordion-content">
-                                    <p id="c6-text">Mobilité assurée pour des déplacements sur différents sites ou en clientèle.</p>
+                                    <p id="c4-text">Certification de technicien réseau obtenue via la Cisco Networking Academy de l'IUT de Villetaneuse, validant les compétences en configuration, administration et dépannage des réseaux.</p>
                                 </div>
                             </article>
                         </div>
@@ -730,15 +701,9 @@
             if(document.getElementById('c3-badge')) document.getElementById('c3-badge').innerText = isEn ? "[VALIDATED]" : "[VALIDÉ]";
             if(document.getElementById('c3-text')) document.getElementById('c3-text').innerText = isEn ? "Understanding of personal data protection issues and mastery of the regulatory basics of GDPR." : "Compréhension des enjeux de protection des données personnelles et maîtrise des bases réglementaires du RGPD.";
             if(document.getElementById('proof-cnil')) document.getElementById('proof-cnil').innerHTML = isEn ? '<i class="fas fa-file-pdf"></i> View certification' : '<i class="fas fa-file-pdf"></i> Voir la certification';
-            if(document.getElementById('c4-title')) document.getElementById('c4-title').innerText = isEn ? "RootMe" : "RootMe";
-            if(document.getElementById('c4-badge')) document.getElementById('c4-badge').innerText = isEn ? "[PRACTICE]" : "[PRATIQUE]";
-            if(document.getElementById('c4-text')) document.getElementById('c4-text').innerText = isEn ? "Platform used to strengthen technical reflexes, challenge solving and a methodical approach to security issues." : "Plateforme utilisée pour renforcer les réflexes techniques, la résolution de challenges et l’approche méthodique des problématiques de sécurité.";
-            if(document.getElementById('c5-title')) document.getElementById('c5-title').innerText = isEn ? "TryHackMe" : "TryHackMe";
-            if(document.getElementById('c5-badge')) document.getElementById('c5-badge').innerText = isEn ? "[PRACTICE]" : "[PRATIQUE]";
-            if(document.getElementById('c5-text')) document.getElementById('c5-text').innerText = isEn ? "Regular training on guided environments to consolidate offensive fundamentals, infrastructure reading and autonomous progression." : "Entraînement régulier sur des environnements guidés pour consolider les fondamentaux offensifs, la lecture d’infrastructure et la progression autonome.";
-            if(document.getElementById('c6-title')) document.getElementById('c6-title').innerText = isEn ? "Driving Licenses B & A2" : "Permis B & A2";
-            if(document.getElementById('c6-badge')) document.getElementById('c6-badge').innerText = isEn ? "[MOBILE]" : "[VÉHICULÉ]";
-            if(document.getElementById('c6-text')) document.getElementById('c6-text').innerText = isEn ? "Mobility ensured for travel across different sites or client locations." : "Mobilité assurée pour des déplacements sur différents sites ou en clientèle.";
+            if(document.getElementById('c4-title')) document.getElementById('c4-title').innerText = isEn ? "Cisco Certification – Network Technician" : "Certification Cisco – Technicien Réseau";
+            if(document.getElementById('c4-badge')) document.getElementById('c4-badge').innerText = isEn ? "[VALIDATED]" : "[VALIDÉ]";
+            if(document.getElementById('c4-text')) document.getElementById('c4-text').innerText = isEn ? "Network technician certification obtained through the Cisco Networking Academy of the IUT de Villetaneuse, validating skills in network configuration, administration and troubleshooting." : "Certification de technicien réseau obtenue via la Cisco Networking Academy de l'IUT de Villetaneuse, validant les compétences en configuration, administration et dépannage des réseaux.";
         }
 
         function switchLanguage(lang) {

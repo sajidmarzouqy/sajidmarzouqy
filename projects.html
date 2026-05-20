@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sajid Marzouqy | Projets & Expériences</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
     
     <style>
         :root {
@@ -554,14 +561,14 @@
                                 <button class="entry-toggle" type="button">
                                     <div class="entry-toggle-main">
                                         <div class="job-title" id="title-stage">Analyse Cybersécurité et Réseaux</div>
-                                        <span class="job-meta" id="meta-stage">Stage · Systelium Qatar</span>
+                                        <span class="job-meta" id="meta-stage">Stage · Systelium</span>
                                     </div>
                                     <span class="entry-toggle-icon"><i class="fas fa-chevron-down"></i></span>
                                 </button>
                                 <div class="entry-content">
                                     <div class="entry-content-inner">
                                         <p class="job-intro" id="desc-stage">
-                                            Stage réalisé chez Systelium Qatar, orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.
+                                            Stage réalisé chez Systelium, orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.
                                         </p>
                                         
                                         <ul class="job-list" id="list-stage">
@@ -931,10 +938,10 @@
 
             // EXPERIENCES
             if(document.getElementById('title-stage')) document.getElementById('title-stage').innerText = isEn ? "Cybersecurity & Network Analysis" : "Analyse Cybersécurité et Réseaux";
-            if(document.getElementById('meta-stage')) document.getElementById('meta-stage').innerText = isEn ? "Internship · Systelium Qatar" : "Stage · Systelium Qatar";
+            if(document.getElementById('meta-stage')) document.getElementById('meta-stage').innerText = isEn ? "Internship · Systelium" : "Stage · Systelium";
             if(document.getElementById('desc-stage')) document.getElementById('desc-stage').innerText = isEn
-                ? "Internship completed at Systelium Qatar, focused on monitoring, information-system security analysis and continuous improvement of cybersecurity practices in a network environment."
-                : "Stage réalisé chez Systelium Qatar, orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.";
+                ? "Internship completed at Systelium, focused on monitoring, information-system security analysis and continuous improvement of cybersecurity practices in a network environment."
+                : "Stage réalisé chez Systelium, orienté supervision, analyse de la sécurité du système d'information et amélioration continue des pratiques cybersécurité dans un environnement réseau.";
             if(document.getElementById('list-stage')) document.getElementById('list-stage').innerHTML = isEn
                 ? "<li>Monitoring network flows and information-system security.</li><li>Analyzing and tracking incidents as well as vulnerabilities.</li><li>Upgrading applications and network equipment.</li><li>Writing and reviewing cybersecurity procedures.</li>"
                 : "<li>Supervision des flux réseaux et de la sécurité du SI.</li><li>Analyse et suivi des incidents ainsi que des vulnérabilités.</li><li>Remise à niveau des applications et des équipements réseaux.</li><li>Rédaction et revue des procédures de cybersécurité.</li>";
