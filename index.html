@@ -382,6 +382,9 @@
         }
     </style>
 
+    <!-- Couche responsive partagée (surcharge les styles inline ci-dessus) -->
+    <link rel="stylesheet" href="assets/responsive.css">
+
     <script>
         if (localStorage.getItem('selectedLanguage')) {
             document.write('<style>#language-overlay { display: none !important; }</style>');
@@ -424,7 +427,7 @@
             <h1 class="fade-in-up" id="hero-name">Sajid Marzouqy</h1>
             <div class="fade-in-up">
                 <span class="hero-badge">
-                    <i class="fas fa-shield-alt"></i> <span id="hero-status">Étudiant Ingénieur CNAM • Cybersécurité</span>
+                    <i class="fas fa-shield-alt"></i> <span id="hero-status">Élève Ingénieur CNAM • Réseau, Cloud &amp; Cybersécurité</span>
                 </span>
             </div>
             <div class="fade-in-up">
@@ -433,7 +436,7 @@
                 </span>
             </div>
             <p class="subtitle fade-in-up" id="hero-sub">
-                Étudiant en Cybersécurité, passionné par la conception d'infrastructures résilientes et la protection des données.
+                Élève ingénieur en informatique, je m'oriente vers des fonctions de Chef de Projet IT généraliste et d'Architecte Réseau &amp; Cloud. Passionné de mécanique, j'en tire une vraie méthode de troubleshooting et d'analyse des systèmes complexes interdépendants.
             </p>
             <div class="btn-group fade-in-up">
                 <div class="dropdown">
@@ -441,8 +444,8 @@
                         <i class="fas fa-download"></i> <span id="btn-cv">Télécharger mon CV</span>
                     </button>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="CvFr.pdf" download><span>🇫🇷</span> <span>Français</span></a>
-                        <a href="Cven.pdf" download><span>🇬🇧</span> <span>English</span></a>
+                        <a href="CV_Sajid_Marzouqy_FR.pdf" download="CV_Sajid_Marzouqy_FR.pdf"><span>🇫🇷</span> <span>Télécharger le CV (FR)</span></a>
+                        <a href="CV_Sajid_Marzouqy_EN.pdf" download="CV_Sajid_Marzouqy_EN.pdf"><span>🇬🇧</span> <span>Download Resume (EN)</span></a>
                     </div>
                 </div>
             </div>
@@ -495,11 +498,11 @@
             if(document.getElementById('nav-contact')) document.getElementById('nav-contact').innerText = isEn ? "Contact" : "Contact";
 
             // HERO
-            document.getElementById('hero-status').innerText = isEn ? "Engineering Student at CNAM • Cybersecurity" : "Étudiant Ingénieur CNAM • Cybersécurité";
+            document.getElementById('hero-status').innerText = isEn ? "Engineering Student at CNAM • Network, Cloud & Cybersecurity" : "Élève Ingénieur CNAM • Réseau, Cloud & Cybersécurité";
             if(document.getElementById('hero-alt')) document.getElementById('hero-alt').innerText = isEn ? "Looking for a work-study placement · 1 week / 1 week rhythm" : "En recherche d'alternance · rythme 1 semaine / 1 semaine";
             document.getElementById('hero-sub').innerHTML = isEn
-                ? "Cybersecurity student, passionate about designing resilient infrastructures and protecting data."
-                : "Étudiant en Cybersécurité, passionné par la conception d'infrastructures résilientes et la protection des données.";
+                ? "Computer engineering student moving toward roles as a generalist IT Project Manager and Network &amp; Cloud Architect. A mechanics enthusiast, I bring a real method for troubleshooting and analysing complex, interdependent systems."
+                : "Élève ingénieur en informatique, je m'oriente vers des fonctions de Chef de Projet IT généraliste et d'Architecte Réseau &amp; Cloud. Passionné de mécanique, j'en tire une vraie méthode de troubleshooting et d'analyse des systèmes complexes interdépendants.";
             document.getElementById('btn-cv').innerText = isEn ? "Download my CV" : "Télécharger mon CV";
         }
 
@@ -542,5 +545,6 @@
             }
         }
     </script>
+    <script src="assets/nav-mobile.js" defer></script>
 </body>
 </html>
