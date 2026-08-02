@@ -2,11 +2,16 @@
   "name": "cv-generator",
   "version": "1.0.0",
   "private": true,
-  "description": "Génère CvFr.pdf et Cven.pdf depuis les sources HTML/CSS",
+  "description": "Génère les CV PDF depuis les sources HTML/CSS et le QR code statique du portfolio",
   "scripts": {
-    "build": "node render.js"
+    "build": "node render.js",
+    "qr": "node qr.js"
   },
   "dependencies": {
-    "puppeteer": "^23.11.1"
+    "jsqr": "^1.4.0",
+    "pdf-lib": "^1.17.1",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^23.11.1",
+    "qrcode": "^1.5.4"
   }
 }
