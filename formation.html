@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <!-- Fond sombre appliqué avant tout autre CSS : évite le flash blanc au chargement -->
+    <style>html{background:#121212}</style>
     <title>Sajid Marzouqy | Formations & Certifications</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -728,11 +731,29 @@
         }
 
         document.querySelectorAll('.accordion-toggle').forEach((button) => {
+            const card = button.parentElement;
+            const content = card.querySelector('.accordion-content');
+
+            // Une fois ouvert, on libère la hauteur pour que le contenu ne soit
+            // jamais rogné (changement de langue, polices chargées après coup...).
+            content.addEventListener('transitionend', (e) => {
+                if (e.propertyName === 'max-height' && card.classList.contains('active')) {
+                    content.style.maxHeight = 'none';
+                }
+            });
+
             button.addEventListener('click', () => {
-                const card = button.parentElement;
-                const content = card.querySelector('.accordion-content');
                 card.classList.toggle('active');
-                content.style.maxHeight = card.classList.contains('active') ? content.scrollHeight + 'px' : '0px';
+
+                if (card.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    if (content.style.maxHeight === 'none' || content.style.maxHeight === '') {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        void content.offsetHeight;
+                    }
+                    content.style.maxHeight = '0px';
+                }
             });
         });
     </script>

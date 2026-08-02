@@ -103,8 +103,7 @@ img, svg, video, canvas, iframe { max-width: 100%; height: auto; }
 .btn-primary,
 .lang-btn,
 .dropdown-content a,
-.arrow-btn,
-.modal-close {
+.arrow-btn {
     min-height: 44px;
 }
 @media (max-width: 768px) {

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <!-- Fond sombre appliqué avant tout autre CSS : évite le flash blanc au chargement -->
+    <style>html{background:#121212}</style>
     <title>Sajid Marzouqy | Projets & Expériences</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1084,40 +1087,81 @@
     </script>
 
     <script>
+        // Ouvre un panneau : une fois l'animation terminée, on libère la hauteur
+        // (max-height: none) pour que l'ouverture d'un sous-accordéon ne soit pas rognée.
+        function openPanel(panel) {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+
+        function closePanel(panel) {
+            // Si la hauteur a été libérée, on la refixe avant d'animer vers 0.
+            if (panel.style.maxHeight === 'none' || panel.style.maxHeight === '') {
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+                void panel.offsetHeight;
+            }
+            panel.style.maxHeight = '0px';
+        }
+
+        function watchPanel(panel, isOpen) {
+            panel.addEventListener('transitionend', (e) => {
+                if (e.propertyName === 'max-height' && isOpen()) {
+                    panel.style.maxHeight = 'none';
+                }
+            });
+        }
+
+        document.querySelectorAll('.entry-content, .competency-content').forEach((panel) => {
+            const host = panel.closest('.project-card, .competency-item');
+            const openClass = panel.classList.contains('entry-content') ? 'expanded' : 'active';
+            watchPanel(panel, () => host.classList.contains(openClass));
+        });
+
         document.querySelectorAll('.competency-toggle').forEach((button) => {
             button.addEventListener('click', function () {
                 const item = this.parentElement;
                 const content = item.querySelector('.competency-content');
+                const parentEntry = item.closest('.entry-content');
 
                 item.classList.toggle('active');
 
                 if (item.classList.contains('active')) {
-                    content.style.maxHeight = content.scrollHeight + 'px';
+                    openPanel(content);
                 } else {
-                    content.style.maxHeight = '0px';
+                    closePanel(content);
+                }
+
+                // Le panneau parent doit suivre la nouvelle hauteur, sinon le
+                // contenu du 2e niveau reste invisible (coupé par son max-height).
+                if (parentEntry && parentEntry.style.maxHeight !== 'none') {
+                    parentEntry.style.maxHeight = parentEntry.scrollHeight + 'px';
                 }
             });
         });
-    </script>
 
-    <script>
         document.querySelectorAll('.entry-toggle').forEach((button, index) => {
             const card = button.closest('.project-card');
             const content = card.querySelector('.entry-content');
 
             if (index === 0) {
                 card.classList.add('expanded');
-                content.style.maxHeight = content.scrollHeight + 'px';
+                openPanel(content);
             }
 
             button.addEventListener('click', function () {
                 card.classList.toggle('expanded');
 
                 if (card.classList.contains('expanded')) {
-                    content.style.maxHeight = content.scrollHeight + 'px';
+                    openPanel(content);
                 } else {
-                    content.style.maxHeight = '0px';
+                    closePanel(content);
                 }
+            });
+        });
+
+        // Les polices/icônes chargées après coup changent la hauteur des panneaux.
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.project-card.expanded .entry-content').forEach((panel) => {
+                panel.style.maxHeight = 'none';
             });
         });
     </script>
